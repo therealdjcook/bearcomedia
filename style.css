@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    line-height: 1.6;
+    padding-bottom: 100px; /* Footer height */ 
+}
+
+
+header {
+    background-color: #ffffff; 
+    color: #000000; /* White text */
+    padding-top: 1rem; /* Padding around the content */
+    padding-bottom: 10px;
+    text-align: center; /* Center the header content */ 
+    font-family: 'bebas neue', sans-serif;
+}
+header h1 {
+    margin-bottom: 0.5rem;
+}
+header img {
+    height: 150px;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 0px;
+}
+nav ul {
+    list-style-type: none; /* Removes bullet points from list */
+    display: flex; /* Aligns menu items in a row */
+    justify-content: center; /* Centers the menu */
+}
+nav ul li {
+    padding: 0 10px; /* Space between menu items */
+}
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000000; /* White text for links */
+    font-weight: bold;
+}
+nav a:hover {
+    color: #25aae1; /* Lighter teal for hover effect */
+}
+
+
+/* Main Section Styles */
+.customized {
+    padding: 2rem; /* Spacing inside sections */
+    text-align: center; /* Centering content */
+    max-width: 100%;
+    background-color: rgb(153, 204, 255);
+    background-position: center;
+    height: auto;
+
+}
+.customized h2 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.5rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 0.85;
+    color: #000000;
+}
+.customized p {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    color:#000000;
+    font-size: 12pt;
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+button {
+    background-color: #000000; /* Teal background for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* Removes border */
+    padding: 0.5rem 1.75rem; /* Vertical and horizontal padding */
+    margin: 1rem 0; /* Space above and below */
+    cursor: pointer; /* Mouse cursor becomes pointer */
+    border-radius: 25px;
+    align-items: center;
+    font-family: "Staatliches", sans-serif;
+    font-size: 1.5rem;
+}
+button:hover {
+    background-color: #ffffff; /* Darker teal on hover */
+    color: rgb(0, 0, 0);
+}
+
+
+/* Carousel Styles */
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.carousel-inner {
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+.carousel-inner img {
+    width: 25%;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex: 0 0 auto;
+}
+/* Keyframes for the scrolling animation of the carousel */
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+
+
+/* Personal Section Styles */
+.personal {
+    background-color:  rgb(153, 204, 255); /* Light teal background for personal touch section */
+    padding: 2rem; /* Spacing inside */
+    text-align: center; /* Centering content */
+    height: auto;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.personal h2 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.5rem;
+    line-height: 0.85;
+}
+.personal p {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 10px;
+    color: #000000;
+}
+.personal img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+/* Platforms Section Styles */
+.platforms {
+    background-color:rgb(255, 255, 255); 
+    padding: 1rem; /* Spacing inside */
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    max-width: 100%;
+}
+.platforms h2 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.5rem;
+    line-height: 0.85;
+}
+.platforms p {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.platforms img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+/* Reviews Section Styles */
+.reviews {
+    background-color:  rgb(153, 204, 255); /* Light teal background for personal touch section */
+    padding: 1rem; /* Spacing inside */
+    text-align: center; /* Centering content */
+    height: auto;
+}
+.reviews h2 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.5rem;
+    line-height: 0.85;
+}
+.reviews p {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: #000000;
+}
+
+.review-box {
+    width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Adds a subtle shadow for depth */
+    border-radius: 12px;  /* Smooth, rounded corners */
+    font-family: 'Helvetica Neue', Arial, sans-serif;  /* Modern, clean font */
+    margin: 20px auto;  /* Centers the box with margin on all sides */
+}
+.review-box p {
+    padding-top: 1px;
+}
+.user-info {
+    font-family: "Staatliches", sans-serif;
+    display: flex;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;  /* Space out items to the edges */
+    gap: 15px;
+}
+.user-name {
+    font-size: 28px;  /* Slightly larger font size for emphasis */
+    font-weight: bold;  /* Makes the name stand out */
+    align-items: center;
+    color: #333;
+    line-height: 0.5pt;
+}
+.user-rating {
+    color: #FFD700;  /* Gold color for stars, suggests value and quality */
+    font-size: 20px;  /* Larger stars to catch the eye */
+}
+.user-job {
+    padding-bottom: 5px;
+}
+.review-text {
+    font-size: 14px;
+    color: #555;  /* Darker gray than before for better readability */
+    line-height: 1.6;  /* Increased line height for easier reading */
+    text-align: center;  /* Justifies the text to align neatly on both sides */
+    border-top: 1px solid #eee;  /* Light horizontal line to separate review from user info */
+}
+
+
+/*FOOTER SECTION*/
+footer {
+    background-color: #000000;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+
+/*/ ABOUT US PAGE /*/
+.legacy {
+    background: rgb(153, 204, 255);
+    padding-top: 20px;
+    text-align: center;
+    height: auto;
+}
+.legacy h2 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.5rem;
+    line-height: 0.85;
+}
+.legacy p {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #000000;
+    line-height: 1.25rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.legacyphoto img {
+    height: 200px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.minds {
+    background: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: auto;
+}
+.minds h2{
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.5rem;
+    line-height: 0.85;
+    text-align: center;
+    color: #000000;
+}
+.minds p {
+    color: #000000;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+    line-height: 1.25rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+
+
+.card-container {
+    padding-bottom: 10px;
+}
+.card {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    height: auto;    
+}
+.card h3 {
+    font-size: 24pt;
+    color: #ffffff;
+    font-family: "Staatliches", sans-serif;
+    font-size: 14pt;
+    line-height: 8pt;
+    padding-bottom: 5px;
+    
+}
+.card p {
+    color: #ffffff;
+    font-size: 0.9em;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+    line-height: 8pt;
+}
+
+
+
+.excellence {
+    background: rgb(153, 204, 255);
+    padding: 20px;
+    text-align: center;
+    height: auto;
+}
+.excellence h2 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.5rem;
+    line-height: 0.85;
+}
+.excellence p {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 1.25rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: #000000;
+}
+.excellence img {
+    height: 150px;
+    padding-top: 10px;
+}
+
+
+/*services page*/
+.services { 
+    background-color: rgb(185, 185, 185);
+    background-image: url(IMG_0987-01.png);
+}
+.services h1 {
+    text-align: center;
+    font-family: "Staatliches", sans-serif;
+    font-size: 48pt;
+    padding: 2rem;
+    line-height: 40pt;
+    font-style: italic;
+    color: white;
+}
+.planning {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:  rgb(153, 204, 255);
+}
+.print {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(153, 204, 255);
+}
+.advertising {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(153, 204, 255);   
+}
+.campaign {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(153, 204, 255);
+}
+
+
+.planphoto {
+    height: 250px;
+    background-image: url(hal-gatewood-weRQAu9TA-A-unsplash.jpg);
+    background-size: 2000px auto;
+    background-position: center;
+}
+.printphoto {
+    height: 250px;
+    background-image: url(rivage-_dJCBtdUu74-unsplash.jpg);
+    background-size: 2000px auto;
+    background-position-x: center;
+    background-position-y: center;
+}
+.advertphoto {
+    height: 250px;
+    background-image: url(kelly-sikkema-o2TRWThve_I-unsplash.jpg);
+    background-size: 2000px auto;
+    background-position-x: center;
+    background-position-y: center;
+}
+.campaignphoto {
+    height: 250px;
+    background-image: url(alvaro-reyes-qWwpHwip31M-unsplash.jpg);
+    background-size: 2000px auto;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+.planning h2, .print h2, .advertising h2, .campaign h2 {
+    color: #000000;
+    text-align: center;
+    font-family: "Staatliches", sans-serif;
+    font-size: 2rem;
+    line-height: 25pt;
+    padding-top: 5px;
+}
+.planning p, .print p, .advertising p, .campaign p {
+    color: #000000;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    line-height: 1.25rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    display: block;
+}
+
+ul {
+    list-style: square inside url("sqpurple.gif");
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul li {
+    padding: 1px;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+
+
+/* PORTFOLIO */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+.gallery img {
+    width: 600px; 
+    height: auto;
+    padding: 15px;
+}
+
+.intro {
+    background-color: rgb(153, 204, 255);
+    padding: 20px;
+}
+.intro h1 {
+    font-size: 24pt;
+    font-family: "Staatliches", sans-serif;
+    text-align: center; 
+}
+.intro p{
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+}
+
+
+.contact {
+    padding-top: 25px;
+    background-image: url(AdobeStock_81556974.webp);
+}
+
+/* General container styling */
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.contact-container h1 {
+    color: #333;
+    font-size: 48px;
+    text-align: center;
+    font-family: "Staatliches", sans-serif;
+}
+.contact-container p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "Comfortaa", sans-serif;
+}
+#contact-form {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#contact-form label {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #444;
+
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding doesn't affect width */
+    font-family: "Comfortaa", sans-serif;
+}
+#contact-form textarea {
+    resize: vertical; /* Allows vertical resizing only */
+}
+#contact-form button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#contact-form button:hover,
+#contact-form button:focus {
+    background-color: #004494;
+}
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.25);
+}
